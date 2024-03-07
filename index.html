@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de Texto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    
+    <div class="contenedor">
+        <center><img src="img/lock.png" id="padlocklogo"></center>
+        <h1>Encriptador y Desencriptador de Texto</h1>
+        <h4>Ingrese el texto a encriptar: </h4>
+        <textarea  id="texto-entrada" class="texto-entrada" placeholder="Ingrese el texto a encriptar/desencriptar"></textarea>
+        <br>
+        <h4>El resultado se mostrará aquí: </h4>
+        <textarea id="texto-salida" class="texto-salida" placeholder="El resultado de mostrará aquí"readonly></textarea>
+        <div class="botones">
+            <button id="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button id="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            <button id="btn-copiar" onclick="copiarResultado()">Copiar Resultado</button>
+            <button id="btn-reiniciar" onclick="limpiarCampos()">Reiniciar</button>
+          </div>
+    </div>
+
+
+    
+    <script src="js/scripts.js"></script>
+</html>
+
